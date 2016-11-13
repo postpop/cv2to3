@@ -1,12 +1,12 @@
 try: # import opencv if necessary
-	  cv2
+    cv2
 except NameError:
-	  import cv2
+    import cv2
 
-def isCV2():
+def is_cv2():
     return cv2.__version__[0] == '2'
 
-def isCV3():
+def is_cv3():
     return cv2.__version__[0] == '3'
 
 # Compatibility fix for OpenCV < 3.0
